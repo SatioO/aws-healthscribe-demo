@@ -1,9 +1,8 @@
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: MIT-0
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
-import TopNavigation from '@cloudscape-design/components/top-navigation';
-import { TopNavigationProps } from '@cloudscape-design/components/top-navigation';
+import TopNavigation, { TopNavigationProps } from '@cloudscape-design/components/top-navigation';
 import { Density, Mode, applyDensity, applyMode } from '@cloudscape-design/global-styles';
 
 import Auth from '@/components/Auth';
@@ -138,7 +137,7 @@ export default function TopNav() {
             <TopNavigation
                 identity={{
                     href: '/',
-                    title: 'Amazon Web Services',
+                    title: 'Accionlabs',
                 }}
                 utilities={navUtils}
             />
