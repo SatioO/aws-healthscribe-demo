@@ -30,6 +30,7 @@ export class cdkStack extends cdk.Stack {
                 { category: 'function', resourceName: 'addBucketLogging' },
             ]
         );
+        console.log(amplifyResources)
         const storageBucket = amplifyResources.storage.healthScribeDemoStorage.BucketName;
         const addBucketLoggingLambdaArn = amplifyResources.function.addBucketLogging.Arn;
 
