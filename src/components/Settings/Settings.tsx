@@ -93,7 +93,7 @@ export default function Settings() {
                     >
                         <SpaceBetween size={'m'}>
                             <FormField
-                                label="HealthScribe Region"
+                                label="Accion Health Region"
                                 description="As of March 31, HealthScribe is available in the US East (N. Virginia) region."
                             >
                                 <Select
