@@ -1,6 +1,6 @@
 // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 // SPDX-License-Identifier: MIT-0
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import Button from '@cloudscape-design/components/button';
 import Container from '@cloudscape-design/components/container';
@@ -14,9 +14,9 @@ import Select from '@cloudscape-design/components/select';
 import SpaceBetween from '@cloudscape-design/components/space-between';
 import Spinner from '@cloudscape-design/components/spinner';
 
-import * as settingOptions from '@/store/appSettings/settingOptions';
 import { useAppSettingsContext } from '@/store/appSettings';
 import { DEFAULT_SETTINGS } from '@/store/appSettings/defaultSettings';
+import * as settingOptions from '@/store/appSettings/settingOptions';
 
 export type AppSettings = {
     'app.region': { label: string; value: string };
@@ -93,8 +93,8 @@ export default function Settings() {
                     >
                         <SpaceBetween size={'m'}>
                             <FormField
-                                label="AWS HealthScribe Region"
-                                description="As of March 31, AWS HealthScribe is available in the US East (N. Virginia) region."
+                                label="HealthScribe Region"
+                                description="As of March 31, HealthScribe is available in the US East (N. Virginia) region."
                             >
                                 <Select
                                     selectedOption={settings['app.region']}
